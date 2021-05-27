@@ -188,18 +188,18 @@ class Calculator extends React.Component {
         //6.2 else show the result
       } else {
 
-      // var hey = eval(keepData.toString().replaceAll(",", ""));
-      //  var hoy = hey.toString();
+       var hey = eval(keepData.toString().replaceAll(",", ""));
+        var hoy = hey.toString();
 
 
-        //this.setState(
-        //{
-         //  ShowOnScreen: hey,
-           // isDelEqualToReset: true,
-            //keepData:[hoy]
-          //},
-          //() => console.log(this.state.ShowOnScreen)
-        //);
+        this.setState(
+        {
+           ShowOnScreen: hey,
+            isDelEqualToReset: true,
+            keepData:[hoy]
+          },
+          () => console.log(this.state.ShowOnScreen)
+        );
       }
     }
   };
