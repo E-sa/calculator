@@ -1,0 +1,76 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 380px) {
+  .screen {
+    // background-color: peru;
+    width: 340px;
+    margin-bottom: 25px;
+  }
+  .grid-container {
+    width: 340px;
+  }
+
+  .grid-item {
+    line-height: 60px;
+  }
+  .h3-and-switch-container {
+    width: 330px;
+    margin-bottom: 15px;
+    h2 {
+      font-size: 32px;
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 380px) {
+  .screen {
+    // background-color: rgb(48, 182, 44);
+    width: 380px;
+    margin-bottom: 15px;
+    // justify-content: space-evenly;
+  }
+  .grid-container {
+    width: 380px;
+  }
+
+  .grid-item {
+    line-height: 70px;
+  }
+  .h3-and-switch-container {
+    width: 380px;
+    margin-bottom: 30px;
+    h2 {
+      font-size: 32px;
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .screen {
+    // background-color: rgb(63, 125, 205);
+    width: 380px;
+    margin-bottom: 15px;
+    justify-self: center;
+  }
+
+  .grid-container {
+    width: 380px;
+  }
+
+  .h3-and-switch-container {
+    width: 380px;
+    margin-bottom: 10px;
+  }
+
+  .grid-item {
+    line-height: 46px;
+  }
+}
+
+// /* Extra large devices (large laptops and desktops, 1200px and up) */
+// @media only screen and (min-width: 1440px) {
+//   .screen {
+//     background-color: rgb(205, 63, 63);
+//   }
+// }
