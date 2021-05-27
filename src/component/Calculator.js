@@ -27,6 +27,7 @@ class Calculator extends React.Component {
       (prevState) => ({
         ShowOnScreen: prevState.ShowOnScreen + calculate,
         keepData: this.state.keepData.concat(calculate),
+        isDelEqualToReset:false
       }),
       () => console.log(this.state.keepData)
     );
@@ -120,11 +121,11 @@ class Calculator extends React.Component {
         keepData[keepData.length - 1] === "*" ||
         keepData[keepData.length - 1] === "/"
       ) {
-        var array = [...keepData];
+        array = [...keepData];
         array.splice(keepData.length - 1);
         array.push(calculate);
 
-        var screen = ShowOnScreen.slice(0, -1).concat(calculate);
+        screen = ShowOnScreen.slice(0, -1).concat(calculate);
 
         this.setState(
           {
@@ -150,7 +151,7 @@ class Calculator extends React.Component {
         });
         //3.2 if not only pop the last item in array
       } else {
-        var array = [...keepData];
+        array = [...keepData];
         array.splice(keepData.length - 1);
 
         var screen2 = ShowOnScreen.slice(0, -1);
@@ -193,7 +194,7 @@ class Calculator extends React.Component {
 
 
         this.setState(
-        {
+         {
            ShowOnScreen: hey,
             isDelEqualToReset: true,
             keepData:[hoy]
