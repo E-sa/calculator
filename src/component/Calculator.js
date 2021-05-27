@@ -120,11 +120,11 @@ class Calculator extends React.Component {
         keepData[keepData.length - 1] === "*" ||
         keepData[keepData.length - 1] === "/"
       ) {
-        array = [...keepData];
+        var array = [...keepData];
         array.splice(keepData.length - 1);
         array.push(calculate);
 
-        screen = ShowOnScreen.slice(0, -1).concat(calculate);
+        var screen = ShowOnScreen.slice(0, -1).concat(calculate);
 
         this.setState(
           {
@@ -150,7 +150,7 @@ class Calculator extends React.Component {
         });
         //3.2 if not only pop the last item in array
       } else {
-        array = [...keepData];
+        var array = [...keepData];
         array.splice(keepData.length - 1);
 
         var screen2 = ShowOnScreen.slice(0, -1);
